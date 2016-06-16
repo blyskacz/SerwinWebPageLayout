@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+    	<span id="time"></span>
+        <meta charset="utf-8">
+        <title>Sklep internetowy</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <script src="changeimg.js" type="text/javascript"></script>
+  		<script src="timeDates.js" type="text/javascript"></script>
+    </head> 
+    <body onLoad="timeDate()">
+    	<header>
+            <div id="logpanel">
+                <label><strong>Nazwa użytkownika: </strong></label><input type="text" id="username" name="username" />
+                <label><strong>Hasło: </strong></label><input type="password" id="password" name="password"/>
+                <button id="login">Zaloguj</button><br />
+             </div>
+        	<img src="images/logo.jpg" id="logo"/>
+        </header>
+        <nav id="menupanel">
+            <ul class="menu">
+            	<li class="menu"><a href="#">Strona głowna</a></li>
+				<li class="menu"><a href="#">O firmie</a></li>
+				<li class="menu"><a href="#">Jak składać zamówienie</a></li>
+                <li class="menu"><a href="#">Promocje</a></li>
+                <li class="menu"><a href="#">Najczęściej zadawane pytania</a></li>
+                <li class="menu"><a href="#">Twoje konto</a></li>
+				<li class="menu"><a href="#">Kontakt</a></li>
+                <li class="menu"><a href="#">Schowek</a></li>
+			</ul>
+        </nav>
+       	<div id="content">
+        	<div id="contentleft">
+				<ul id="kategorie">
+					<li><a href="#">Kolekcja jesienna</a>
+						<ul>
+							<li><a href="#">Obuwie męskie</a></li>
+							<li><a href="#">Obuwie damskie</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Kolekcja zimowa</a>
+						<ul>
+							<li><a href="#">Obuwie męskie</a></li>
+							<li><a href="#">Obuwie damskie</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Outlet</a>
+						<ul>
+							<li><a href="#">Obuwie męskie</a></li>
+							<li><a href="#">Obuwie damskie</a></li>
+						</ul>
+					</li>
+				</ul>
+        	</div>
+        	<div id="contentmid">
+            	<p id="headline">Aktualne promocje</p>
+            	<p id="image"><img src="images/promo1.jpg" id="promo"/></p>
+			</div>
+			<div id="contentright"> 
+            	<p id="headline">Koszyk <img src="images/shopping-cart.jpg" width="25" height="25" /></p>
+                <p id="text">Liczba wybranych produków: <a href="#">0</a></p>
+                <p id="text">Wartośc koszyka: <a href="#">0,00</a> PLN</p>
+                <p id="text"><a href="#">Przejdź do koszyka</a></p>
+			</div>
+		</div>
+		<div id="content">
+			<div id="contentleft">
+            	<p id="headline">Bestsellery</p>
+            	<p id="image"><img src="images/best1.jpg" id="best"/></p> 
+			</div>
+			<div id="contentmid">
+            	<p id="headline">Najnowsze</p>
+           		<p id="image"><img src="images/new1.jpg" id="new"/></p>     
+			</div>
+			<div id="contentright">
+            	<p id="headline">Jak zamawiać</p>
+                <p id="text"> 1. Dodaj interesujący Cię produkt do koszyka.</p>
+                <p id="text"> 2. Uzupełnij dane do wysyłki.</p>
+                <p id="text"> 3. Wybierz formę dostawy i płatności.</p>
+                <p id="text"> 4. Monituruj stan twojego zamówienia.</p>
+                <p id="text"><a href="#">Sprawdź dostępne formy dostawy</a></p> 
+            </div>
+		</div>
+		<article id="video">
+            <p id="headline">Video przedstawiające proces produkcji</p>
+            <p id="text"><video width="512" height="370" controls autoplay muted loop>
+       			<source src="videos/production.mp4">
+            </video></p>
+		</article>
+        <footer>
+        	<p id="listfoot">
+            <ul>
+            	<li id="lifoot"><a id="footlink" href="#">Jak zamawiać</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Forma dostawy</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Forma płatności</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Czas dostawy</a></li>
+                <li id="lifoot"><a id="footlink" href="#">O sklepie</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Gwarancja</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Dostępność produktów</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Reklmacje</a></li>
+                <li id="lifoot"><a id="footlink" href="#">FAQ</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Status zamówienia</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Regulamin sklepu</a></li>
+                <li id="lifoot"><a id="footlink" href="#">Dodatkowe ubezpiecznie przesyłki</a></li>
+                <li id="lifoot"><a id="footlink" href="#" onClick="parent.location.href='mailto:serwin.obuwie@gmail.com'">Kontakt z biurem obsługi</a></li>
+            </ul></p>
+            <p id="foottext">Copyright 2015 Szymon Serwin All rights reserver</p>
+        </footer>
+    </body>
+</html>
